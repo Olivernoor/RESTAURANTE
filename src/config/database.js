@@ -12,7 +12,7 @@ const sequelize = new Sequelize({
   user: DATABASE_USER,
   password: DATABASE_PASSWORD,
   host: DATABASE_HOST,
-  port: 3000,
+  port: 3306,
 });
 
 export default sequelize;

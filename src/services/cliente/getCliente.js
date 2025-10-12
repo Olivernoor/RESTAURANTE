@@ -1,16 +1,16 @@
-import model from "../../model/index.js"
+import model from "../../model/index.js";
 
 const getOne = async (id) => {
    try {
-     const actor = await model.Actor.findOne({
+     const cliente = await model.cliente.getOne({
         where: {
             id: id,
         },
     });
-    if (!actor){
+    if (!cliente){
         return false;
     }
-    return actor;
+    return cliente;
    } catch (error) {
     throw new Error(error.message);
     

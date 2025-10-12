@@ -1,5 +1,5 @@
 import sequelize from "../config/database.js";
-import Actor from "./actor/actor.js";
+import Cliente from "./cliente/cliente.js";
 
 sequelize.sync({
     force: false,
@@ -10,6 +10,6 @@ sequelize.sync({
 
 )
 
-export default{
-    Actor
+export default {
+    Cliente
 }

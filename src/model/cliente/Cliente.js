@@ -1,19 +1,15 @@
 import {DataTypes} from "@sequelize/core";
 import sequelize from "../../config/database.js";
 
-const Actor = sequelize.define('actor',{
+const Cliente = sequelize.define('cliente', {
     name: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    city: {
+    number: {
         type: DataTypes.STRING,
         allowNull: false
-    },
-    uf: {
-        type: DataTypes.STRING(2),
-        allowNull: false
     }
-
+  
 })
-export default Actor
+export default Cliente
