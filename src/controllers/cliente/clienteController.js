@@ -92,6 +92,7 @@ const handleCreateCliente = async (req, res) => {
     }
 
     res.status(201).json({ data: createdCliente});
+    
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "ocorreu um erro" });

@@ -12,4 +12,7 @@ const Cliente = sequelize.define('cliente', {
     }
   
 })
+
+
+
 export default Cliente

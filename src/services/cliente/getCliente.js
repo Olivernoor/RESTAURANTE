@@ -2,7 +2,7 @@ import model from "../../model/index.js";
 
 const getOne = async (id) => {
    try {
-     const cliente = await model.cliente.getOne({
+     const cliente = await model.Cliente.getOne({
         where: {
             id: id,
         },
